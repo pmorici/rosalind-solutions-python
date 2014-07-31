@@ -55,3 +55,6 @@ docs/_build/
 # Vim files
 *.*~
 
+# rosalind test data
+rosalind_*.txt
+
