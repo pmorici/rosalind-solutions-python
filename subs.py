@@ -1,5 +1,4 @@
 from sys import stdin
-from itertools import izip
 
 def kmp_table(sub):
     """Compute the kmp table for sub"""
@@ -36,10 +35,8 @@ def kmp_search(s, sub, allow_overlap=False):
        modified to find all sub sequence matches.
     """
     tbl = kmp_table(sub)
-    print "table=", tbl
     if allow_overlap:
         sub_overlap = kmp_overlap(sub)
-        print "overlap=", sub_overlap
 
     m = 0
     i = 0
